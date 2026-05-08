@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusantara Food Fest - Kuliner Indonesia</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        /* Gaya Kustom (Opsional, untuk menyesuaikan tema) */
+        body {
+            background-color: #f4f4f4; /* Light gray background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .jumbotron {
+            background-image: url(1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #d32f2f; /* Merah Indonesia */
+            color: white;
+            padding: 4rem 2rem;
+            margin-bottom: 2rem;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+        .food-card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 2rem;
+        }
+        .food-card:hover {
+            transform: translateY(-5px);
+        }
+        .card-header-custom {
+            background-color: #ffb300; /* Kuning/Emas */
+            color: #333;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .details-box {
+            background-color: #e8f5e9; /* Hijau muda */
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .details-box h5 {
+            color: #2e7d32; /* Hijau tua */
+            border-bottom: 2px solid #a5d6a7;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">🇮🇩 Nusantara Food Fest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4"><strong>Jelajahi Rasa Indonesia! 🍽️</strong></h1>
+            <p class="lead">Temukan sejarah, cerita, dan fakta menarik di balik kuliner nusantara dari Sabang sampai Merauke.</p>
+        </div>
+    </div>
+
+    <div class="container" id="menu">
+        <h2 class="text-center mb-5 text-danger">Aneka Ragam Hidangan Daerah</h2>
+
+        <div class="card food-card">
+            <div class="card-header card-header-custom">
+                Nasi Goreng 🍚 (Seluruh Indonesia)
+            </div>
+            <div class="card-body">
+                <div class="row g-4">
+                    <div class="col-md-5">
+                        <img src="nazgor.jpg" class="img-fluid rounded shadow-sm" alt="Nasi Goreng">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="details-box">
+                            <h5>📜 Sejarah Singkat</h5>
+                            <p>Dipercaya berasal dari pengaruh imigran Tionghoa yang membawa tradisi untuk tidak membuang sisa makanan, terutama nasi. Nasi goreng menjadi solusi praktis dan ekonomis. Ia kemudian beradaptasi dengan bumbu lokal seperti kecap manis, menjadikannya unik di Indonesia.</p>
+                        </div>
+                        <div class="details-box">
+                            <h5>✨ Fun Facts</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>Hidangan Nasional:</strong> Sering dianggap sebagai salah satu hidangan nasional Indonesia.</li>
+                                <li><strong>Bisa Ditemukan Kapan Saja:</strong> Dijual mulai dari sarapan, makan siang, hingga penjual kaki lima di malam hari.</li>
+                                <li><strong>Variasi Tanpa Batas:</strong> Memiliki ratusan variasi regional, seperti Nasi Goreng Jawa, Nasi Goreng Kambing, dll.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card food-card">
+            <div class="card-header card-header-custom">
+                Rendang 🥩 (Minangkabau, Sumatera Barat)
+            </div>
+            <div class="card-body">
+                <div class="row g-4">
+                    <div class="col-md-5">
+                        <img src="rendang.jpg" class="img-fluid rounded shadow-sm" alt="Rendang">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="details-box">
+                            <h5>📜 Sejarah Singkat</h5>
+                            <p>Rendang adalah masakan adat dan budaya yang telah ada sejak lama. Proses memasak yang memakan waktu lama (lebih dari 8 jam) bertujuan sebagai metode pengawetan agar makanan tahan lama untuk perjalanan jauh, seperti pada tradisi merantau masyarakat Minangkabau.</p>
+                        </div>
+                        <div class="details-box">
+                            <h5>✨ Fun Facts</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>Makanan Terlezat Dunia:</strong> Beberapa kali dinobatkan sebagai makanan terlezat di dunia oleh media internasional.</li>
+                                <li><strong>Tiga Tahap Masak:</strong> Prosesnya melalui tiga tahap: Gulai (berkuah), Kalio (sedikit basah), dan Rendang (kering, tahan lama).</li>
+                                <li><strong>Simbol Filosofi:</strong> Bahan-bahannya melambangkan masyarakat Minang: Daging (Niniak Mamak/pemimpin), Kelapa (Cadiak Pandai/cendekiawan), Cabai (Alim Ulama), dan Bumbu (Seluruh masyarakat).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card food-card">
+            <div class="card-header card-header-custom">
+                Sate Lilit 🍢 (Bali)
+            </div>
+            <div class="card-body">
+                <div class="row g-4">
+                    <div class="col-md-5">
+                        <img src="salit.jpg" class="img-fluid rounded shadow-sm" alt="Sate Lilit">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="details-box">
+                            <h5>📜 Sejarah Singkat</h5>
+                            <p>Sate secara umum diperkirakan berasal dari Jawa. Namun, Sate Lilit adalah varian khas Bali yang dagingnya dicincang dan dililitkan pada batang serai atau bambu, bukan ditusuk seperti sate pada umumnya. Ini merepresentasikan kebersamaan dan kesatuan, karena bahannya dicampur.</p>
+                        </div>
+                        <div class="details-box">
+                            <h5>✨ Fun Facts</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>Beda Tusukan:</strong> Menggunakan batang serai yang memberikan aroma khas saat dibakar, tidak seperti tusuk bambu biasa.</li>
+                                <li><strong>Dibuat dari Ikan:</strong> Selain daging ayam atau babi, Sate Lilit Ikan (terutama ikan laut) sangat populer di Bali.</li>
+                                <li><strong>Bumbu Basah:</strong> Sate ini menggunakan bumbu yang lebih basah dan dicampur langsung ke daging cincang, bukan hanya sebagai saus celupan.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="card food-card">
+            <div class="card-header card-header-custom">
+                Klepon 🟢/🟣 (Jawa Tengah & Jawa Timur)
+            </div>
+            <div class="card-body">
+                <div class="row g-4">
+                    <div class="col-md-5">
+                        <img src="klepon.jpg" class="img-fluid rounded shadow-sm" alt="Klepon">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="details-box">
+                            <h5>📜 Sejarah Singkat</h5>
+                            <p>Asal-usul klepon berakar kuat dalam tradisi kuliner Jawa, di mana penggunaan beras ketan, gula aren/gula jawa, dan kelapa menunjukkan bahwa kue ini adalah penganan asli yang sudah ada sejak lama. Sejarawan makanan menduga bahwa penganan yang menggunakan bahan inti ini, seperti klepon dan kerabat dekatnya, kue putu, sudah ada di Jawa sejak era Kerajaan Majapahit (1293–1527). Berarti, klepon mungkin telah berusia lebih dari 700 tahun!</p>
+                        </div>
+                        <div class="details-box">
+                            <h5>✨ Fun Facts</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>Nama yang Meledak:</strong> Nama klêpon diyakini berasal dari klêpung, sebuah istilah kata yang menirukan suara/sensasi meletupnya gula aren cair di mulut saat menggigit bola beras ketan yang masih hangat!</li>
+                                <li><strong>Warna dari alam:</strong> Warna hijau yang cerah secara tradisional tidak berasal dari pewarna buatan. Warna ini diekstrak dari Daun Pandan (sering dicampur dengan daun suji), yang juga memberikan aroma manis & wangi khas yang menyerupai vanila. (Ada yang warna ungu juga!)</li>
+                                <li><strong>Makna Budaya:</strong>Catatan awal tentang kue manis sejenis klepon ditemukan dalam puisi epik Jawa abad ke-19, Serat Centhini, di mana klepon dicantumkan sebagai makanan yang disajikan selama acara-acara khusus & perayaan.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card food-card">
+            <div class="card-header card-header-custom">
+                🐟 Ikan Kuah Kuning (Papua & Maluku)
+            </div>
+            <div class="card-body">
+                <div class="row g-4">
+                    <div class="col-md-5">
+                        <img src="ikk.jpg" class="img-fluid rounded shadow-sm" alt="Ikan Kuah Kuning">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="details-box">
+                            <h5>📜 Sejarah Singkat</h5>
+                            <p>Sejarah Ikan Kuah Kuning tidak lepas dari makanan pokok utama masyarakat Papua, yaitu Papeda. Karena Papeda memiliki rasa yang tawar dan tekstur yang lengket, masyarakat adat membutuhkan lauk berkuah kental dengan cita rasa yang kuat, asam, dan segar sebagai penyeimbang. tercipta dari ketersediaan bahan-bahan lokal di pesisir, yaitu ikan segar yang melimpah, kunyit sebagai pewarna alami, dan sumber rasa asam (belimbing wuluh/jeruk nipis). Resep ini adalah ekspresi langsung dari kekayaan bahari & hasil bumi di Indonesia Timur.</p>
+                        </div>
+                        <div class="details-box">
+                            <h5>✨ Fun Facts</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>Rasa Asam yang Menyegarkan:</strong> Sumber rasa asam dalam kuah ini umumnya menggunakan belimbing wuluh atau perasan jeruk nipis segar. Kombinasi asam, pedas, dan gurihnya sangat efektif untuk memecah rasa tawar dari Papeda.</li>
+                                <li><strong>Warna alami:</strong> Warna kuning cerah yang khas bukan berasal dari pewarna buatan, melainkan sepenuhnya dari rempah utama, yaitu kunyit. Kunyit tidak hanya memberi warna, tetapi juga aroma khas dan manfaat kesehatan.</li>
+                                <li><strong>Identitas Timur:</strong>Meskipun sangat terkenal di Papua, Ikan Kuah Kuning juga merupakan hidangan umum di seluruh kepulauan Maluku dan Sulawesi dengan sedikit variasi bumbu, menegaskan identitas kuliner masyarakat bahari di Indonesia Timur.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        &copy; <strong>|2025 Nusantara Food Fest || Kelompok 1|</strong>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
